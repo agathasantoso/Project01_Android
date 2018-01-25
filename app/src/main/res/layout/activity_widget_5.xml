@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.sch.smktelkom_mlg.biodata.widget_5">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="59dp"
+        android:layout_height="23dp"
+        android:text="Wilayah"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Spinner
+        android:id="@+id/spinnerProvinsi"
+        android:layout_width="272dp"
+        android:layout_height="51dp"
+        android:entries="@array/provinsi"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="58dp" />
+
+    <Button
+        android:id="@+id/buttonOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GO"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="170dp" />
+
+    <TextView
+        android:id="@+id/textViewHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:hint="Tampilan"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="230dp" />
+
+    <Spinner
+        android:id="@+id/spinnerKota"
+        android:layout_width="272dp"
+        android:layout_height="52dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="109dp" />
+
+</android.support.constraint.ConstraintLayout>

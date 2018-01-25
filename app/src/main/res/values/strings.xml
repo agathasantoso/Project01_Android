@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">BIODATA</string>
+    <string name="smk_telkom_malang">SMK Telkom Malang</string>
+    <string name="sawojajar_malang_jawa_timur_indonesia">Sawojajar, Malang, Jawa Timur, Indonesia</string>
+    <string name="todo">TODO</string>
+    <string name="ok">OK</string>
+    <string name="hasil">Hasil</string>
+    <string name="status">Status</string>
+    <string name="belum_menikah">Belum Menikah</string>
+    <string name="menikah">Menikah</string>
+    <string name="duda">Duda</string>
+    <string name="janda">Janda</string>
+    <string name="oke">OKE</string>
+    <string name="output">Output</string>
+    <string name="nama">Nama</string>
+    <string name="tahun_kelahiran">Tahun Kelahiran</string>
+    <string name="jumlah_anak">Jumlah Anak</string>
+    <string name="hobi">Hobi</string>
+    <string name="membaca">Membaca</string>
+    <string name="olahraga">Olahraga</string>
+    <string name="menggambar">Menggambar</string>
+    <string name="menulis">Menulis</string>
+    <string name="okay">OKAY</string>
+    <string name="nonton_film">Nonton Film</string>
+    <string name="keluaran">Keluaran</string>
+    <string name="textview">TextView</string>
+    <string name="textview">TextView</string>
+    <string name="button">Button</string>
 </resources>
