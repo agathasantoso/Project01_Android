@@ -23,7 +23,8 @@
     <string name="okay">OKAY</string>
     <string name="nonton_film">Nonton Film</string>
     <string name="keluaran">Keluaran</string>
-    <string name="textview">TextView</string>
-    <string name="textview">TextView</string>
     <string name="button">Button</string>
+    <string name="wilayah">Wilayah</string>
+    <string name="go">GO</string>
+    <string name="tampilan">Tampilan</string>
 </resources>

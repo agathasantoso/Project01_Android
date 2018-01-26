@@ -7,6 +7,7 @@ import android.widget.AdapterView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 import id.sch.smktelkom_mlg.biodata.adapter.KotaAdapter;
@@ -19,11 +20,8 @@ public class widget_5 extends AppCompatActivity {
             {"Bandung", "Cirebon", "Bekasi"}, {"Semarang", "Magelang", "Surakarta"},
             {"Surabaya", "Malang", "Blitar"}, {"Denpasar"}};
 
-    adapter =new
+    ArrayList<String> listKota = new ArrayList<>();
     KotaAdapter adapter;
-
-    KotaAdapter(this,listKota);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,11 +51,35 @@ public class widget_5 extends AppCompatActivity {
 
             }
         });
+        adapter = new KotaAdapter(this, listKota);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spKota.setAdapter(adapter);
     }
 
     private void doClick() {
-        tvHasil.setText("Wilayah Provinsi " + spProvinsi.getSelectedItem().toString()
-                + " Kota " + spKota.getSelectedItem().toString());
+        StringBuilder builder = new StringBuilder();
+        builder.append("Wilayah Provinsi ");
+        builder.append(spProvinsi.getSelectedItem().toString());
+        builder.append(" Kota ");
+        builder.append(spKota.getSelectedItem().toString());
+        builder.append("\n\n\n");
+
+        builder.append("Kota yang tidak dipilih adalah :\n\n");
+
+        String[] arProvinsi = getResources().getStringArray(R.array.provinsi);
+        int posProv = spProvinsi.getSelectedItemPosition();
+        int posKota = spKota.getSelectedItemPosition();
+
+        for (int i = 0; i < arProvinsi.length; i++) {
+            builder.append(arProvinsi[i]).append(":\n");
+            for (int j = 0; j < arKota[i].length; j++) {
+                if (!(i == posProv && j == posKota)) {
+                    builder.append("\t").append(arKota[i][j]).append("\n");
+                }
+            }
+            builder.append("\n");
+        }
+        tvHasil.setText(builder);
     }
 }
 
